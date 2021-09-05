@@ -1,0 +1,50 @@
+//Strings IN JAVA
+
+/* SYNTAX
+String s = new String();
+String s2,s1;
+s2 = "Abcd";
+s1 = "frnd";
+
+character array conevertd to string
+char[] a = "hello";
+String str = String(a);
+
+String -> character array
+String.toCharArray(str);
+
+String s1=new String(a); // deep copy (new obj)
+String s2=s;  // shallow copy (both point to same obj)
+
+Strings are immutable
+
+functions:
+1. length of string -> int l = s.length();
+
+2. getting char from string -> char a = s.CharAt(index)
+
+3. s.getChars(int start, int offset,char[] array, int startindex_dest_arr)
+	start is starting index
+	offset is how may chars we want // optional if not specifed then all chars
+	char array where it will be stored
+	startindex_dest_arr -> optional means starting index of array
+
+char[] arr = new char[10]
+s.getChars(0,3,arr) // store first 3
+s.getChars(s.length-3, 3, arr, 3) // store last 3 chars in continuation with first 3
+
+4. subString(int start, int end)
+String s1 = s.subString(3,5);
+
+5. get position of char s="hello"
+int position = s.indexOf('l'); -> 2
+int nextPosi = s.indexOf('l',3); -> 3// search started from 3rd posi
+
+6. s.getBytes(int start, int offset,byte[] array, int startindex_dest_arr)
+byte[] arr = new byte[10];
+s.getBytes(0,3,arr);
+
+7. trim() ->
+str = "Abcd Efg Hij"
+str.trim() -> "AbcdEfghij"
+*/ 
